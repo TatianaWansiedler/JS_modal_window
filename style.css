@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+#root {
+  max-width: 1200px;
+  margin: 30px auto;
+}
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: auto;
+  gap: 30px;
+}
+.user_card {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 8px;
+  background-color: #fefefe;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.user_card img {
+  width: 50%;
+}
+.user_card h3 {
+  color: #6f6f6f;
+  font-size: 28px;
+}
+.user_card a {
+  color: #72a0cf;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 0;
+}
+.user_card p {
+  color: #999;
+  font-size: 22px;
+}
+.user_card button {
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 18px;
+  outline: none;
+  padding: 16px 20px;
+  text-transform: uppercase;
+  width: 45%;
+  background-color: #944dd2cc;
+  border: 2px solid #9a45e44d;
+}
+.user_card button:hover {
+  background: transparent;
+  color: #944dd2cc;
+  transition: background color;
+  transition-duration: 0.4s;
+}
+
+/* Modal */
+
+.modal_container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(3px);
+}
+.modal_window {
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  left: calc(50% - 400px);
+  top: calc(50% - 300px);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid rgb(196, 196, 196);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  background-color: white;
+}
+.posts_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.posts_container h3 {
+  margin-top: 20px;
+  color: #6f6f6f;
+  font-size: 28px;
+  text-align: center;
+}
+.posts_container ul {
+  padding: 50px;
+}
+.posts_container ul > li {
+  font-size: 20px;
+  padding: 10px 0;
+  color: #585858;
+}
+.close_button {
+  align-self: flex-end;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  color: #944dd2cc;
+  border-radius: 50%;
+  background: transparent;
+  border: 0.5px solid rgb(101, 101, 101);
+  cursor: pointer;
+}
+
+.la-blog {
+  font-size: 300px;
+  color: #944dd2cc;
+  align-self: center;
+}
+.no_posts_text {
+  margin-top: 20px;
+  color: #959595;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+}
+
